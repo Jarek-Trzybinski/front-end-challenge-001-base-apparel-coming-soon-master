@@ -1,0 +1,283 @@
+@import url(https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,600&display=swap);
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  margin: 0;
+  padding: 0;
+  display: -webkit-box;
+  display: flex;
+  font-family: Josefin Sans;
+  font-size: 16px;
+  color: #ce9797;
+  width: 100%;
+  height: 100%; }
+
+.page-wrapper {
+  margin: 0 auto;
+  display: -webkit-box;
+  display: flex;
+  max-width: 1440px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-direction: column; }
+  .page-wrapper nav {
+    margin: 0;
+    padding: 30px 45px;
+    -webkit-box-ordinal-group: 1;
+            order: 0; }
+    .page-wrapper nav .logo-mobile {
+      height: 25px; }
+  .page-wrapper main {
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+            flex-direction: column;
+    -webkit-box-flex: 1;
+            flex: 1; }
+    .page-wrapper main .image {
+      -webkit-box-ordinal-group: 3;
+              order: 2;
+      -webkit-box-flex: 1;
+              flex: 1; }
+      .page-wrapper main .image img {
+        width: 100%; }
+    .page-wrapper main .content {
+      -webkit-box-ordinal-group: 4;
+              order: 3;
+      background: white;
+      padding: 70px 45px;
+      -webkit-box-flex: 1;
+              flex: 1;
+      width: 100%; }
+      .page-wrapper main .content .title {
+        text-transform: uppercase;
+        font-weight: 300;
+        font-size: 40px;
+        letter-spacing: 8px;
+        margin-bottom: 2px; }
+      .page-wrapper main .content .subtitle {
+        text-transform: uppercase;
+        margin-bottom: 15px;
+        font-weight: 600;
+        letter-spacing: 10px;
+        font-size: 40px;
+        color: #413a3a;
+        line-height: 1.1em; }
+      .page-wrapper main .content p {
+        font-size: 14px;
+        margin-bottom: 30px;
+        font-weight: 400;
+        line-height: 1.8em; }
+      .page-wrapper main .content .email-form {
+        display: -webkit-box;
+        display: flex;
+        position: relative;
+        width: 100%;
+        -webkit-box-align: center;
+                align-items: center;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+                flex-direction: column; }
+        .page-wrapper main .content .email-form input {
+          color: black;
+          font-size: 16px;
+          font-weight: 300;
+          border-radius: 25px;
+          width: 100%;
+          padding: 24px 100px 24px 30px;
+          box-sizing: border-box;
+          border: 0.4px solid #ce9797;
+          height: 18px;
+          outline: none;
+          width: 100%; }
+        .page-wrapper main .content .email-form input::-webkit-input-placeholder {
+          color: #ce9797; }
+        .page-wrapper main .content .email-form input::-moz-placeholder {
+          color: #ce9797; }
+        .page-wrapper main .content .email-form input:-ms-input-placeholder {
+          color: #ce9797; }
+        .page-wrapper main .content .email-form input::-ms-input-placeholder {
+          color: #ce9797; }
+        .page-wrapper main .content .email-form input::placeholder {
+          color: #ce9797; }
+        .page-wrapper main .content .email-form input:focus {
+          border-color: #ce9797; }
+        .page-wrapper main .content .email-form input + p {
+          align-self: flex-start;
+          padding-left: 25px;
+          visibility: hidden; }
+        .page-wrapper main .content .email-form input.invalid, .page-wrapper main .content .email-form input.invalid:focus {
+          border: 1px solid red; }
+        .page-wrapper main .content .email-form input.invalid + p {
+          visibility: visible; }
+        .page-wrapper main .content .email-form img.error-icon {
+          position: absolute;
+          padding: 12px;
+          right: 60px;
+          visibility: hidden; }
+        .page-wrapper main .content .email-form input.invalid + img.error-icon {
+          opacity: 0; }
+        .page-wrapper main .content .email-form button {
+          border-radius: 25px;
+          position: absolute;
+          right: 0px;
+          top: 0px;
+          padding: 16px 32px;
+          width: 30px;
+          box-sizing: border-box;
+          border: 0;
+          background: linear-gradient(135deg, #f8bfbf, #ee8c8c);
+          outline: none;
+          text-align: center;
+          display: -webkit-box;
+          display: flex;
+          -webkit-box-pack: center;
+                  justify-content: center;
+          -webkit-box-align: center;
+                  align-items: center;
+          -webkit-transition-duration: 300ms;
+                  transition-duration: 300ms;
+          -webkit-transition-property: -webkit-transform;
+          transition-property: -webkit-transform;
+          transition-property: transform;
+          transition-property: transform, -webkit-transform; }
+          .page-wrapper main .content .email-form button img {
+            height: 18px; }
+        .page-wrapper main .content .email-form button:hover {
+          background: linear-gradient(135deg, #fadbdb, #f8bfbf);
+          -webkit-transform: scale(1.1);
+                  transform: scale(1.1); }
+    .page-wrapper main div {
+      -webkit-box-ordinal-group: 3;
+              order: 2; }
+
+footer {
+  display: -webkit-box;
+  display: flex;
+  padding: 30px;
+  -webkit-box-pack: center;
+          justify-content: center; }
+
+/* mobile screen */
+@media screen and (max-width: 750px) {
+  body {
+    background: white; }
+  .logo-desktop {
+    display: none; }
+  .page-wrapper main .image {
+    min-height: 250px;
+    -webkit-box-flex: 1;
+            flex: 1;
+    background-image: url("../images/hero-mobile.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top center; }
+  .content {
+    text-align: center; } }
+
+/* Desktop Screen */
+@media screen and (min-width: 750px) {
+  .page-wrapper .nav {
+    display: none; }
+  .page-wrapper main {
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+            flex-direction: row; }
+    .page-wrapper main .image {
+      -webkit-box-ordinal-group: 3;
+              order: 2;
+      -webkit-box-align: stretch;
+              align-items: stretch;
+      display: -webkit-box;
+      display: flex;
+      -webkit-box-flex: 3;
+              flex: 3;
+      background-image: url("../images/hero-desktop.jpg");
+      backgroud-size: cover;
+      background-position-x: center; }
+      .page-wrapper main .image img {
+        width: 100%; }
+    .page-wrapper main .content {
+      -webkit-box-ordinal-group: 2;
+              order: 1;
+      -webkit-box-flex: 4;
+              flex: 4;
+      background: white;
+      background-image: url(../images/bg-pattern-desktop.svg);
+      background-size: cover;
+      background-repeat: no-repeat;
+      padding: 0; }
+      .page-wrapper main .content .wrapper {
+        padding: 40px 30% 0 17%; }
+        .page-wrapper main .content .wrapper .logo-desktop {
+          height: 30px;
+          margin-bottom: 50px; }
+        .page-wrapper main .content .wrapper .title {
+          text-transform: uppercase;
+          font-weight: 300;
+          letter-spacing: 11px;
+          margin-bottom: 2px;
+          font-size: 65px; }
+        .page-wrapper main .content .wrapper .subtitle {
+          text-transform: uppercase;
+          margin-bottom: 20px;
+          font-weight: 600;
+          letter-spacing: 11px;
+          font-size: 65px;
+          color: #413a3a;
+          line-height: 1.1em; }
+        .page-wrapper main .content .wrapper p {
+          font-size: 16px;
+          margin-bottom: 50px;
+          font-weight: 400;
+          line-height: 1.8em; }
+        .page-wrapper main .content .wrapper .email-form {
+          display: -webkit-box;
+          display: flex;
+          position: relative;
+          width: 100%;
+          -webkit-box-align: center;
+                  align-items: center; }
+          .page-wrapper main .content .wrapper .email-form input {
+            color: black;
+            font-size: 16px;
+            font-weight: 300;
+            border-radius: 25px;
+            width: 100%;
+            padding: 24px 120px 24px 30px;
+            box-sizing: border-box;
+            border: 0.4px solid #ce9797;
+            height: 18px;
+            outline: none;
+            width: 100%; }
+          .page-wrapper main .content .wrapper .email-form input.invalid, .page-wrapper main .content .wrapper .email-form input.invalid:focus {
+            border: 1px solid red; }
+          .page-wrapper main .content .wrapper .email-form .error-icon {
+            position: absolute;
+            padding: 12px;
+            right: 80px; }
+          .page-wrapper main .content .wrapper .email-form button {
+            border-radius: 25px;
+            position: absolute;
+            right: 0px;
+            top: 0px;
+            padding: 17px 41px;
+            width: 30px;
+            box-sizing: border-box;
+            border: 0;
+            outline: none;
+            text-align: center;
+            display: -webkit-box;
+            display: flex;
+            -webkit-box-pack: center;
+                    justify-content: center;
+            -webkit-box-align: center;
+                    align-items: center; }
+            .page-wrapper main .content .wrapper .email-form button img {
+              height: 16px; } }
