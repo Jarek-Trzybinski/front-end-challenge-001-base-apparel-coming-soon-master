@@ -71,6 +71,7 @@ body {
         margin-bottom: 30px;
         font-weight: 400;
         line-height: 1.8em;
+        margin-bottom: 25px;
         margin-top: 15px; }
       .page-wrapper main .content .email-form {
         display: -webkit-box;
@@ -114,6 +115,8 @@ body {
           border: 1px solid red; }
         .page-wrapper main .content .email-form input.invalid + p {
           visibility: visible; }
+        .page-wrapper main .content .email-form .error-message {
+          margin-top: 3px; }
         .page-wrapper main .content .email-form img.error-icon {
           position: absolute;
           padding: 12px;
@@ -259,6 +262,9 @@ footer {
             width: 100%; }
           .page-wrapper main .content .wrapper .email-form input.invalid, .page-wrapper main .content .wrapper .email-form input.invalid:focus {
             border: 1px solid red; }
+          .page-wrapper main .content .wrapper .email-form .error-message {
+            margin-top: 3px;
+            font-size: 14px; }
           .page-wrapper main .content .wrapper .email-form .error-icon {
             position: absolute;
             padding: 12px;

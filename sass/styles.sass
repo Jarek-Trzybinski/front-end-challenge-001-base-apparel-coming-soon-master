@@ -73,6 +73,7 @@ body
                 margin-bottom: 30px
                 font-weight: 400
                 line-height: 1.8em
+                margin-bottom: 25px
                 margin-top: 15px
             .email-form
                 display: flex
@@ -106,7 +107,8 @@ body
                     border: 1px solid red
                 input.invalid + p
                     visibility: visible
-                    
+                .error-message
+                    margin-top: 3px    
                 img.error-icon 
                     position: absolute
                     padding: 12px
@@ -229,6 +231,9 @@ footer
                             width: 100%
                         input.invalid, input.invalid:focus
                             border: 1px solid red
+                        .error-message
+                            margin-top: 3px
+                            font-size: 14px
                         .error-icon 
                             position: absolute
                             padding: 12px
