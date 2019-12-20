@@ -19,7 +19,7 @@ body {
   margin: 0 auto;
   display: -webkit-box;
   display: flex;
-  max-width: 1440px;
+  width: 100%;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
           flex-direction: column; }
@@ -199,7 +199,7 @@ footer {
       -webkit-box-flex: 3;
               flex: 3;
       background-image: url("../images/hero-desktop.jpg");
-      backgroud-size: cover;
+      background-size: cover;
       background-position-x: center; }
       .page-wrapper main .image img {
         width: 100%; }
